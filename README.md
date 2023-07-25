@@ -14,7 +14,7 @@ React, Facebook tarafından geliştirilen açık kaynaklı bir JavaScript kütü
 <br><br>
 ### 1-) React Proje Kurulumu
 
-```javascript
+```terminal
 yarn create react-app myapp
 ```
 bulunduğunuz dizine "myapp" klasörü açarak dosyaları bu klasöre yükler. 
@@ -22,14 +22,14 @@ bulunduğunuz dizine "myapp" klasörü açarak dosyaları bu klasöre yükler.
 
 Eğer bulundusğunu dizine yükleme yapmak isterseniz ise aşağıdaki kodu kullanmanız gerekmektedir.
 
-```javascript
+```terminal
 yarn create react-app ./
 ```
 <br><br>
 
 ### 2-) React Projenin Çalıştırılması
 
-```javascript
+```terminal
 yarn start
 ```
 <br><br>
@@ -80,6 +80,7 @@ index.js
 
 ##### 4.3-) src/App.js
 
+App.js
 ```javascript
 import './App.css';
 
@@ -121,15 +122,213 @@ root.render(
 İki Türlüde modül yükleyebiliriyoruz
 
 ##### Komut
-```javascript
+```terminal
 yarn add modulunAdı
 ```
 
 ##### Örnek
-```javascript
+```terminal
 yarn add bootstrap
 ```
-Bu örnekde bootsrap modülünü uygulamamıza dahil ettik.
+
+App.js
+```javascript
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+function App() {
+  return (
+    <div>
+      React Project
+    </div>
+  );
+}
+
+export default App;
+```
+Bu örnekde bootsrap modülünü uygulamamıza ve App.js ye dahil ettik.
 
 
+### 5-) Components Oluşturma
 
+React bileşenleri, bir web uygulamasının arayüzünün farklı parçalarını oluşturmak için kullanılan bağımsız ve yeniden kullanılabilir JavaScript fonksiyonları veya sınıflarıdır. React bileşenleri, uygulamadaki belirli parçaların sorumluluklarını ve davranışlarını düzenlemeye yardımcı olur.
+
+
+##### 5.1) Arrow Fonksiyonlu Bileşenler (Arrow Function Components):
+Arrow fonksiyonlu bileşenler, fonksiyon bileşenlerinin bir başka kısa ve okunaklı şeklidir. Fonksiyon bileşenlerinde olduğu gibi, props parametresini alır ve JSX içinde kullanılabilir. State yönetimi için React kancalarını kullanabilirsiniz. Daha çok bunu kullanıyoruz.
+
+##### Örnek1
+Lesson.jsx dosyası oluşturuyoruz. Dosyayı açtıktan sonra VSCode da aşağıdaki kodu yazdığımızda otamatik oluşuyor.
+Not: Dosyanın ilk harfi Büyük olacak.
+
+```terminal
+rafce
+```
+
+```javascript
+import React from 'react';
+
+const Lesson = () => {
+  return (
+    <div>
+      React Project
+    </div>
+  );
+}
+
+export default Lesson;
+
+```
+
+##### Örnek2 props ile kullanımı
+Lesson.jsx dosyası oluşturuyoruz. Dosyayı açtıktan sonra VSCode da aşağıdaki kodu yazdığımızda otamatik oluşuyor. Aşağıdaki örnekdede görüldüğü gibi Propsları biz de içersine ekliyoruz. 
+Not: Dosyanın ilk harfi Büyük olacak.
+
+```terminal
+rafce
+```
+
+```javascript
+import React from 'react';
+
+const Lesson = (props) => {
+  return (
+    <div>
+      <h1>{props.title}</h1>
+      <p>{props.description}</p>
+    </div>
+  );
+}
+
+export default Lesson;
+
+```
+
+##### 5.2) Fonksiyon Bileşenleri (Function Components):
+Fonksiyon bileşenleri, React 16.8 sürümü ve sonrasında fonksiyonel bileşenler adıyla da bilinen basit ve temiz bir bileşen tanımlama yöntemidir. Bir fonksiyon bileşeni, props (özellikler) parametresini alır ve JSX içinde kullanılabilir. State yönetimi için useState gibi React kancalarını (hooks) kullanabilirsiniz.
+
+##### Örnek1
+Lesson.jsx dosyası oluşturuyoruz. Dosyayı açtıktan sonra VSCode da aşağıdaki kodu yazdığımızda otamatik oluşuyor
+Not: Dosyanın ilk harfi Büyük olacak.
+
+```terminal
+rafc
+```
+
+
+Lesson.jsx
+```javascript
+import React from 'react';
+
+function Lesson() {
+  return (
+    <div>
+      React Project
+    </div>
+  );
+}
+
+export default Lesson;
+```
+
+##### Örnek2 props ile kullanımı
+Lesson.jsx dosyası oluşturuyoruz. Dosyayı açtıktan sonra VSCode da aşağıdaki kodu yazdığımızda otamatik oluşuyor. Aşağıdaki örnekdede görüldüğü gibi Propsları biz de içersine ekliyoruz. 
+Not: Dosyanın ilk harfi Büyük olacak.
+
+```terminal
+rafc
+```
+
+Lesson.jsx
+```javascript
+import React from 'react';
+
+function Lesson(props) {
+  return (
+    <div>
+      <h1>{props.title}</h1>
+      <p>{props.description}</p>
+    </div>
+  );
+}
+
+export default Lesson;
+```
+
+### 6-) Componenti App.js Ekleme
+
+##### Örnek1
+Lesson.jsx dosyasındaki bileşeni oluşturduktan sonra, bu bileşeni App.js dosyasına ekleyebilirsiniz. Bunu yapmak için import ifadesini kullanarak oluşturduğunuz bileşeni içeri aktarmanız gerekir.
+
+
+Lesson.jsx 
+```javascript
+import React from 'react';
+
+function Lesson() {
+  return (
+    <div>
+      React Project
+    </div>
+  );
+}
+
+export default Lesson;
+```
+
+
+App.js
+```javascript
+import './App.css';
+import Lesson from './components/Lesson';
+
+function App() {
+  return (
+    <div>
+      <Lesson/>
+    </div>
+  );
+}
+
+export default App;
+
+```
+
+##### Örnek2 props ile kullanımı
+
+Lesson.jsx dosyasındaki bileşeni oluşturduktan sonra, bu bileşeni App.js dosyasına ekleyebilirsiniz. Bunu yapmak için import ifadesini kullanarak oluşturduğunuz bileşeni içeri aktarmanız gerekir.
+
+
+Lesson.jsx
+```javascript
+import React from 'react';
+
+function Lesson(props) {
+  return (
+    <div>
+      <h1>{props.title}</h1>
+      <p>{props.description}</p>
+    </div>
+  );
+}
+
+export default Lesson;
+```
+
+
+App.js
+```javascript
+import './App.css';
+import Lesson from './components/Lesson';
+
+function App() {
+  return (
+    <div>
+      <Lesson title="Bileşen Başlık" description="Bileşen Açıklama" />
+    </div>
+  );
+}
+
+export default App;
+
+```
