@@ -11,7 +11,15 @@ React Nedir?
 React, Facebook tarafından geliştirilen açık kaynaklı bir JavaScript kütüphanesidir. Web uygulamalarının kullanıcı arayüzlerini oluşturmak için kullanılır ve özellikle tek sayfa uygulamaları (Single Page Applications - SPA) için idealdir. React, bileşen tabanlı bir yapıya sahiptir, bu da uygulamaları küçük ve bağımsız parçalara bölmeyi ve yönetmeyi kolaylaştırır.
 
 
+[1-) React Proje Kurulumu](https://github.com/MercanX/react-documentation#1--react-proje-kurulumu)
+[2-) React Projenin Çalıştırılması](https://github.com/MercanX/react-documentation#2--react-projenin-%C3%A7al%C4%B1%C5%9Ft%C4%B1r%C4%B1lmas%C4%B1)
+[3-) Projenin Temiz Hale Getirilmesi](https://github.com/MercanX/react-documentation#3--projenin-temiz-hale-getirilmesi)
+[4-) Dosya içeriklerinin temizlenmesi](https://github.com/MercanX/react-documentation#4--dosya-i%C3%A7eriklerinin-temizlenmesi)
 [5-) Modül Yükleme](https://github.com/MercanX/react-documentation#5--mod%C3%BCl-y%C3%BCkleme)
+[6-) Components Oluşturma](https://github.com/MercanX/react-documentation#6--components-olu%C5%9Fturma)
+[7-) Componenti App.js Ekleme](https://github.com/MercanX/react-documentation#7--componenti-appjs-ekleme)
+[Tools](https://github.com/MercanX/react-documentation#tools)
+
 
 
 <br><br>
@@ -152,12 +160,12 @@ export default App;
 Bu örnekde bootsrap modülünü uygulamamıza ve App.js ye dahil ettik.
 
 
-### 5-) Components Oluşturma
+### 6-) Components Oluşturma
 
 React bileşenleri, bir web uygulamasının arayüzünün farklı parçalarını oluşturmak için kullanılan bağımsız ve yeniden kullanılabilir JavaScript fonksiyonları veya sınıflarıdır. React bileşenleri, uygulamadaki belirli parçaların sorumluluklarını ve davranışlarını düzenlemeye yardımcı olur.
 
 
-##### 5.1) Arrow Fonksiyonlu Bileşenler (Arrow Function Components):
+##### 6.1) Arrow Fonksiyonlu Bileşenler (Arrow Function Components):
 Arrow fonksiyonlu bileşenler, fonksiyon bileşenlerinin bir başka kısa ve okunaklı şeklidir. Fonksiyon bileşenlerinde olduğu gibi, props parametresini alır ve JSX içinde kullanılabilir. State yönetimi için React kancalarını kullanabilirsiniz. Daha çok bunu kullanıyoruz.
 
 ##### Örnek1
@@ -207,7 +215,7 @@ export default Lesson;
 
 ```
 
-##### 5.2) Fonksiyon Bileşenleri (Function Components):
+##### 6.2) Fonksiyon Bileşenleri (Function Components):
 Fonksiyon bileşenleri, React 16.8 sürümü ve sonrasında fonksiyonel bileşenler adıyla da bilinen basit ve temiz bir bileşen tanımlama yöntemidir. Bir fonksiyon bileşeni, props (özellikler) parametresini alır ve JSX içinde kullanılabilir. State yönetimi için useState gibi React kancalarını (hooks) kullanabilirsiniz.
 
 ##### Örnek1
@@ -258,7 +266,7 @@ function Lesson(props) {
 export default Lesson;
 ```
 
-### 6-) Componenti App.js Ekleme
+### 7-) Componenti App.js Ekleme
 
 ##### Örnek1
 Lesson.jsx dosyasındaki bileşeni oluşturduktan sonra, bu bileşeni App.js dosyasına ekleyebilirsiniz. Bunu yapmak için import ifadesini kullanarak oluşturduğunuz bileşeni içeri aktarmanız gerekir.
@@ -335,3 +343,11 @@ function App() {
 export default App;
 
 ```
+
+### Tools
+
+##### 01- Html to jsx
+Html yapıyı Jsx Yapıya dönüştürmeyi sağlıyor. Oldukca Kullanışlı bir site
+
+[https://transform.tools/html-to-jsx](https://transform.tools/html-to-jsx)
+
