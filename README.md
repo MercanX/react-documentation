@@ -12,12 +12,19 @@ React, Facebook tarafından geliştirilen açık kaynaklı bir JavaScript kütü
 
 
 [1-) React Proje Kurulumu](https://github.com/MercanX/react-documentation#1--react-proje-kurulumu)
+
 [2-) React Projenin Çalıştırılması](https://github.com/MercanX/react-documentation#2--react-projenin-%C3%A7al%C4%B1%C5%9Ft%C4%B1r%C4%B1lmas%C4%B1)
+
 [3-) Projenin Temiz Hale Getirilmesi](https://github.com/MercanX/react-documentation#3--projenin-temiz-hale-getirilmesi)
+
 [4-) Dosya içeriklerinin temizlenmesi](https://github.com/MercanX/react-documentation#4--dosya-i%C3%A7eriklerinin-temizlenmesi)
+
 [5-) Modül Yükleme](https://github.com/MercanX/react-documentation#5--mod%C3%BCl-y%C3%BCkleme)
+
 [6-) Components Oluşturma](https://github.com/MercanX/react-documentation#6--components-olu%C5%9Fturma)
+
 [7-) Componenti App.js Ekleme](https://github.com/MercanX/react-documentation#7--componenti-appjs-ekleme)
+
 [Tools](https://github.com/MercanX/react-documentation#tools)
 
 
