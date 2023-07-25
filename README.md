@@ -25,6 +25,8 @@ React, Facebook tarafından geliştirilen açık kaynaklı bir JavaScript kütü
 
 [7-) Componenti App.js Ekleme](https://github.com/MercanX/react-documentation#7--componenti-appjs-ekleme)
 
+[8-) useState Kullanımı](https://github.com/MercanX/react-documentation#8--usestate-kullan%C4%B1m%C4%B1)
+
 [Tools](https://github.com/MercanX/react-documentation#tools)
 
 
@@ -36,28 +38,24 @@ yarn create react-app myapp
 ```
 bulunduğunuz dizine "myapp" klasörü açarak dosyaları bu klasöre yükler. 
 <br><br>
-
 Eğer bulundusğunu dizine yükleme yapmak isterseniz ise aşağıdaki kodu kullanmanız gerekmektedir.
 
 ```terminal
 yarn create react-app ./
 ```
 <br><br>
-
 ### 2-) React Projenin Çalıştırılması
 
 ```terminal
 yarn start
 ```
 <br><br>
-
 ### 3-) Projenin Temiz Hale Getirilmesi
 
 ##### 3.1-) public Klasörüde sadece aşağıdakiler olacak diğerleri silinecek
 
 index.html
 <br><br>
-
 ##### 3.2-) src Klasörüde sadece aşağıdakiler olacak diğerleri silinecek
 
 App.css
@@ -68,7 +66,6 @@ index.css
 
 index.js
 <br><br>
-
 ### 4-) Dosya içeriklerinin temizlenmesi
 
 ##### 4.1-) public/index.html
@@ -89,12 +86,11 @@ index.js
   </body>
 </html>
 ```
-
-
+<br><br>
 ##### 4.2-) src/App.css
 
 İçersi tamamen silinecek
-
+<br><br>
 ##### 4.3-) src/App.js
 
 App.js
@@ -111,13 +107,11 @@ function App() {
 
 export default App;
 ```
-
-
+<br><br>
 ##### 4.4-) src/index.css
 
 İçersi tamamen silinecek
-
-
+<br><br>
 ##### 4.5-) src/index.js
 
 ```javascript
@@ -133,8 +127,7 @@ root.render(
   </React.StrictMode>
 );
 ```
-
-
+<br><br>
 ### 5-) Modül Yükleme
 İki Türlüde modül yükleyebiliriyoruz
 
@@ -142,7 +135,7 @@ root.render(
 ```terminal
 yarn add modulunAdı
 ```
-
+<br><br>
 ##### Örnek
 ```terminal
 yarn add bootstrap
@@ -164,8 +157,7 @@ function App() {
 export default App;
 ```
 Bu örnekde bootsrap modülünü uygulamamıza ve App.js ye dahil ettik.
-
-
+<br><br>
 ### 6-) Components Oluşturma
 
 React bileşenleri, bir web uygulamasının arayüzünün farklı parçalarını oluşturmak için kullanılan bağımsız ve yeniden kullanılabilir JavaScript fonksiyonları veya sınıflarıdır. React bileşenleri, uygulamadaki belirli parçaların sorumluluklarını ve davranışlarını düzenlemeye yardımcı olur.
@@ -173,7 +165,7 @@ React bileşenleri, bir web uygulamasının arayüzünün farklı parçalarını
 
 ##### 6.1) Arrow Fonksiyonlu Bileşenler (Arrow Function Components):
 Arrow fonksiyonlu bileşenler, fonksiyon bileşenlerinin bir başka kısa ve okunaklı şeklidir. Fonksiyon bileşenlerinde olduğu gibi, props parametresini alır ve JSX içinde kullanılabilir. State yönetimi için React kancalarını kullanabilirsiniz. Daha çok bunu kullanıyoruz.
-
+<br><br>
 ##### Örnek1
 Lesson.jsx dosyası oluşturuyoruz. Dosyayı açtıktan sonra VSCode da aşağıdaki kodu yazdığımızda otamatik oluşuyor.
 Not: Dosyanın ilk harfi Büyük olacak.
@@ -196,7 +188,7 @@ const Lesson = () => {
 export default Lesson;
 
 ```
-
+<br><br>
 ##### Örnek2 props ile kullanımı
 Lesson.jsx dosyası oluşturuyoruz. Dosyayı açtıktan sonra VSCode da aşağıdaki kodu yazdığımızda otamatik oluşuyor. Aşağıdaki örnekdede görüldüğü gibi Propsları biz de içersine ekliyoruz. 
 Not: Dosyanın ilk harfi Büyük olacak.
@@ -220,10 +212,10 @@ const Lesson = (props) => {
 export default Lesson;
 
 ```
-
+<br><br>
 ##### 6.2) Fonksiyon Bileşenleri (Function Components):
 Fonksiyon bileşenleri, React 16.8 sürümü ve sonrasında fonksiyonel bileşenler adıyla da bilinen basit ve temiz bir bileşen tanımlama yöntemidir. Bir fonksiyon bileşeni, props (özellikler) parametresini alır ve JSX içinde kullanılabilir. State yönetimi için useState gibi React kancalarını (hooks) kullanabilirsiniz.
-
+<br><br>
 ##### Örnek1
 Lesson.jsx dosyası oluşturuyoruz. Dosyayı açtıktan sonra VSCode da aşağıdaki kodu yazdığımızda otamatik oluşuyor
 Not: Dosyanın ilk harfi Büyük olacak.
@@ -247,7 +239,7 @@ function Lesson() {
 
 export default Lesson;
 ```
-
+<br><br>
 ##### Örnek2 props ile kullanımı
 Lesson.jsx dosyası oluşturuyoruz. Dosyayı açtıktan sonra VSCode da aşağıdaki kodu yazdığımızda otamatik oluşuyor. Aşağıdaki örnekdede görüldüğü gibi Propsları biz de içersine ekliyoruz. 
 Not: Dosyanın ilk harfi Büyük olacak.
@@ -271,7 +263,7 @@ function Lesson(props) {
 
 export default Lesson;
 ```
-
+<br><br>
 ### 7-) Componenti App.js Ekleme
 
 ##### Örnek1
@@ -310,7 +302,7 @@ function App() {
 export default App;
 
 ```
-
+<br><br>
 ##### Örnek2 props ile kullanımı
 
 Lesson.jsx dosyasındaki bileşeni oluşturduktan sonra, bu bileşeni App.js dosyasına ekleyebilirsiniz. Bunu yapmak için import ifadesini kullanarak oluşturduğunuz bileşeni içeri aktarmanız gerekir.
@@ -349,11 +341,11 @@ function App() {
 export default App;
 
 ```
-
+<br><br>
 ### 8-) useState Kullanımı
  `useState` kancası (hook), React uygulamalarında durum yönetimi için kullanılan bir fonksiyondur. React'ta state (durum), bir bileşenin içindeki verileri depolamak ve bu verileri güncellemek için kullanılır.
  
-
+<br><br>
 Kullanışı:
 ```javascript
 const [count, setCount] = useState(0);
@@ -398,7 +390,7 @@ Azalt  butonuna tıklandığı zaman `azalt` fonksiyonunu çağırıyoruz, `coun
 
 Not: Burada kısa yolu ve fonksiyon yazarak her iki durumuda görmüş olduk.
 
-
+<br><br>
 ### Tools
 
 ##### 01- Html to jsx
