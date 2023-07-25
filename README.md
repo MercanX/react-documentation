@@ -28,7 +28,6 @@ React, Facebook tarafından geliştirilen açık kaynaklı bir JavaScript kütü
 [Tools](https://github.com/MercanX/react-documentation#tools)
 
 
-
 <br><br>
 ### 1-) React Proje Kurulumu
 
@@ -350,6 +349,55 @@ function App() {
 export default App;
 
 ```
+
+### 8-) useState Kullanımı
+ `useState` kancası (hook), React uygulamalarında durum yönetimi için kullanılan bir fonksiyondur. React'ta state (durum), bir bileşenin içindeki verileri depolamak ve bu verileri güncellemek için kullanılır.
+ 
+
+Kullanışı:
+```javascript
+const [count, setCount] = useState(0);
+```
+`count` adlı değişkeni tanımladık ve başlangıç değeri olarak 0 verdik. `setCount` ile değişkeni güncellemek için kullanılan fonksiyonu tanımladık.
+
+<br><br>
+ `useState` kancasını ve bileşeninizi oluşturmak için import ifadesine eklenmesi gerekmektedir.
+ ```javascript
+import React, { useState }  from 'react';
+```
+<br><br>
+Lesson.jsx
+```javascript
+import React, { useState }  from 'react';
+
+function Lesson() {
+
+  const [count, setCount] = useState(0);
+
+  const azalt =()=>{
+    setCount(count-1)
+  }
+
+  return (
+    <div>
+      <h1>Sayac: {count}</h1>
+      <button onClick={() => setCount(count + 1)}>Artır</button>
+      <button onClick={azat}>Azalt</button>
+    </div>
+  );
+}
+
+export default Lesson;
+```
+
+Örnekte, `count` adlı değişkeni tanımladık ve başlangıç değeri olarak 0 verdik. Ardından, `setCount` ile değişkeni güncellemek için kullanıyoruz.
+
+Bu örnekte, 
+Arttır butonuna tıklandığı zaman `count` değişkenini 1 arttırıyoruz ve `setCount` ile `count` değişkenini güncelliyoruz.
+Azalt  butonuna tıklandığı zaman `azalt` fonksiyonunu çağırıyoruz, `count` değişkenini 1 azaltıyoruz ve `setCount` ile count değişkenini güncelliyoruz.
+
+Not: Burada kısa yolu ve fonksiyon yazarak her iki durumuda görmüş olduk.
+
 
 ### Tools
 
