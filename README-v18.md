@@ -424,7 +424,7 @@ function Lesson() {
       <h1>Sayac: {count}</h1>
       <button onClick={() => setCount(count + 1)}>Artır</button>
       <button onClick={sifirla}>Sıfırla</button>
-      <button onClick={azat}>Azalt</button>
+      <button onClick={azalt}>Azalt</button>
     </div>
   );
 }
