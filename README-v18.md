@@ -1,8 +1,8 @@
 # React Başlangıç Kılavuzu
-React Başlangıç Kılavuzu
+React v18 Başlangıç Kılavuzu
 
 
-React Başlangıç Kılavuzu
+React v18 Başlangıç Kılavuzu
 Hoş geldiniz! Bu kılavuz, React'i yeni başlayanlar için anlaşılır ve adım adım öğrenilebilir şekilde sunmayı amaçlamaktadır. React, modern web uygulamaları geliştirmek için popüler bir JavaScript kütüphanesidir ve kullanıcı arayüzlerini oluşturmak için kullanılır.
 
 Bu dokümantasyon, temel JavaScript bilgisine sahip ancak React'i henüz bilmeyenler için tasarlanmıştır. Sizlerin deneyim seviyelerine uygun olarak, bu kılavuzda React'in temellerini kavrayacak ve etkileyici web uygulamaları oluşturmanıza yardımcı olacak adımları öğreneceksiniz.
