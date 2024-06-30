@@ -9,7 +9,7 @@ Bu dokümantasyon, temel JavaScript bilgisine sahip ancak React'i henüz bilmeye
 
 React Nedir?
 React, Facebook tarafından geliştirilen açık kaynaklı bir JavaScript kütüphanesidir. Web uygulamalarının kullanıcı arayüzlerini oluşturmak için kullanılır ve özellikle tek sayfa uygulamaları (Single Page Applications - SPA) için idealdir. React, bileşen tabanlı bir yapıya sahiptir, bu da uygulamaları küçük ve bağımsız parçalara bölmeyi ve yönetmeyi kolaylaştırır.
-https://github.com/MercanX/react-documentation/blob/main/README-v18.md
+
 
 [1-) React Proje Kurulumu](https://github.com/MercanX/react-documentation/blob/main/README-v18.md#1--react-proje-kurulumu)
 
@@ -31,23 +31,23 @@ https://github.com/MercanX/react-documentation/blob/main/README-v18.md
 
 
 <br><br>
-### 1-) React Proje Kurulumu
+### 1-) React v18 Proje Kurulumu
 
 ```terminal
-yarn create react-app myapp
+npx create-react-app myapp
 ```
 bulunduğunuz dizine "myapp" klasörü açarak dosyaları bu klasöre yükler. 
 <br><br>
 Eğer bulundusğunu dizine yükleme yapmak isterseniz ise aşağıdaki kodu kullanmanız gerekmektedir.
 
 ```terminal
-yarn create react-app ./
+npx create-react-app ./
 ```
 <br><br>
 ### 2-) React Projenin Çalıştırılması
-
+Projenin içirsindeki package.json dosyasında "scripts" içersindeki "start" alanı sizin nasıl çalıştıracağınızı gösterir.
 ```terminal
-yarn start
+npm start
 ```
 <br><br>
 ### 3-) Projenin Temiz Hale Getirilmesi
