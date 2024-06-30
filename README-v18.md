@@ -143,7 +143,7 @@ npm add bootstrap
 
 Modül eklendikden sonra "package.json" sonyasının içersindeki "dependencies" alanına modul adı ve versiyonu eklenmiş olacaktır.
 
-App.js
+package.json
 ```json
 {
   "name": "`myapp",
@@ -153,7 +153,8 @@ App.js
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "bootstrap": "^5.3.3",
+    "_comment": "Eklediğimiz Bootstrap modul aşağıdadır",
+    "bootstrap": "^5.3.3",//
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
@@ -414,11 +415,15 @@ function Lesson() {
   const azalt =()=>{
     setCount(count-1)
   }
+  function sifirla(){
+    setCount(0)
+  }
 
   return (
     <div>
       <h1>Sayac: {count}</h1>
       <button onClick={() => setCount(count + 1)}>Artır</button>
+      <button onClick={sifirla}>Sıfırla</button>
       <button onClick={azat}>Azalt</button>
     </div>
   );
@@ -431,9 +436,10 @@ export default Lesson;
 
 Bu örnekte, 
 Arttır butonuna tıklandığı zaman `count` değişkenini 1 arttırıyoruz ve `setCount` ile `count` değişkenini güncelliyoruz.
+Sıfırla buttonuna tıkladığımız zaman `sifirla` fonksiyonunu çağırıyoruz, `setCount` ile count değişkenini 0 yapıyoruz.
 Azalt  butonuna tıklandığı zaman `azalt` fonksiyonunu çağırıyoruz, `count` değişkenini 1 azaltıyoruz ve `setCount` ile count değişkenini güncelliyoruz.
 
-Not: Burada kısa yolu ve fonksiyon yazarak her iki durumuda görmüş olduk.
+Not: Burada kısa yolu ve 2 farklı fonksiyon yazılım şeklini de görmüş olduk.
 
 <br><br>
 ### Tools
