@@ -11,7 +11,7 @@ React Nedir?
 React, Facebook tarafından geliştirilen açık kaynaklı bir JavaScript kütüphanesidir. Web uygulamalarının kullanıcı arayüzlerini oluşturmak için kullanılır ve özellikle tek sayfa uygulamaları (Single Page Applications - SPA) için idealdir. React, bileşen tabanlı bir yapıya sahiptir, bu da uygulamaları küçük ve bağımsız parçalara bölmeyi ve yönetmeyi kolaylaştırır.
 
 
-[1-) React Proje Kurulumu](https://github.com/MercanX/react-documentation/blob/main/README-v18.md#1--react-proje-kurulumu)
+[1-) React Proje Kurulumu](https://github.com/MercanX/react-documentation/edit/main/README-v18.md#1--react-v18-proje-kurulumu)
 
 [2-) React Projenin Çalıştırılması](https://github.com/MercanX/react-documentation#2--react-projenin-%C3%A7al%C4%B1%C5%9Ft%C4%B1r%C4%B1lmas%C4%B1)
 
